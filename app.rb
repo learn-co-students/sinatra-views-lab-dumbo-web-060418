@@ -1,8 +1,15 @@
 class App < Sinatra::Base
 
-	get '/' do
-		erb :index
-	end
+	get('/'){erb :index}
 
+	get('/hello'){erb :hello}
+
+	get('/goodbye'){
+		name = "Joe"
+		erb :goodbye}
+
+	get '/date' do
+		erb :date
+	end
 
 end
